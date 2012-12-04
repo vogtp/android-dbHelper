@@ -16,7 +16,7 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.widget.Toast;
 import ch.almana.android.db.R;
-import ch.almana.android.logdebug.Debug;
+import ch.almana.android.util.Debug;
 
 public class DatabasePreferenceHelper {
 
