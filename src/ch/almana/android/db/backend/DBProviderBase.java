@@ -80,7 +80,7 @@ public abstract class DBProviderBase extends ContentProvider {
 		}
 		SQLiteDatabase db = openHelper.getWritableDatabase();
 		long rowId = db.insert(utm.tableName, DBBase.NAME_ID, values);
-		if (rowId > 0) {
+		if (rowId > -1) {
 			ret = ContentUris.withAppendedId(uri, rowId);
 		} else {
 			throw new SQLException("Failed to insert row into " + uri);
