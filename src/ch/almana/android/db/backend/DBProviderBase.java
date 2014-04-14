@@ -25,7 +25,7 @@ public abstract class DBProviderBase extends ContentProvider {
 	private UriMatcher uriContentTypeMatcher;
 	private static boolean notifyChanges = true;
 
-	private SQLiteOpenHelper openHelper;
+	protected SQLiteOpenHelper openHelper;
 
 	protected abstract SQLiteOpenHelper getOpenHelper();
 
